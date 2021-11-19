@@ -128,8 +128,8 @@
                 <form name="validation" method="post" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                     <legend>Строка поиска</legend>
-                    <input type="text" name="search2" pattern="[А-Я][а-я].*" placeholder="только русские буквы"><br><br>
-                    <input type="tel" name="telNumber" pattern="^((\+)+([0-9]{3})+(-)+([0-9]{2})+(-)+([0-9]{7}))$" placeholder="+375-29-1111111"><br>
+                    <input type="text" name="search2" pattern="[А-Яа-яЁё].*" placeholder="только русские буквы"><br><br>
+                    <input type="tel" name="telNumber" pattern="\+\d{3}-\d{2}-\d{7}" placeholder="+375-29-1111111"><br>
                     <input type="submit" value="проверить">
                 </fieldset>
                 </form>
