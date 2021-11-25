@@ -8,14 +8,84 @@
 </head>
 <style>
     .container{
-        display: flexbox;
+        display: flex;
+        background-color: rgb(255, 179, 179);
+        border: solid 2px black;
+    }
+    .cont_nav{
+        background-color: blueviolet;
+        align-self: flex-start;
+        height: 500px;
+        min-width: 15em;
+        max-width: 15em;
+    }
+    .nav{
+       
+        font-family: cursive;
+        color: white;
+
+    }
+    .container__1{
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+    
+        justify-content: flex-start;
+    }
+    .article{
+        display: flex;
+        background-color: yellow;
+        margin-bottom: 3px;
+        border: solid 1px red;
+        flex: 1 1 auto;
+        font-family: cursive;
+    }
+    .footer{
+        background-color: brown;
+        color: burlywood;
+        width: 100%;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 1px;  
+    }
+    .img{
+        display: flex;
+        justify-self: right;
+        align-self: flex-end;
     }
 </style>
 
 <body>
     <div class="container">
-
+        <div class="cont_nav">
+             <div class="nav">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quia earum reprehenderit nisi deleniti porro natus veritatis similique harum ullam sunt neque quis dolores necessitatibus molestias a enim odit. Nemo.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo possimus fugit doloribus atque dignissimos. Laudantium ducimus pariatur vero? Odio, rerum debitis aut in consectetur accusamus aspernatur provident molestias nisi quia.
+             </div>
+        </div>
+        <div class="container__1">
+            <div class="article">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt veritatis fuga error unde odit consequuntur accusantium fugit aperiam facilis? Eius fuga incidunt ullam molestiae beatae nam dolores soluta quaerat?
+                Velit mollitia modi consequuntur consequatur ea dolorem quia repudiandae doloribus numquam qui dolorum similique commodi sed magni, necessitatibus consectetur quidem veniam quasi quam error omnis soluta? Accusantium blanditiis at non.
+                Tempore magnam quas, quaerat necessitatibus facere sed vitae fugiat delectus nulla ipsam reprehenderit aspernatur quis vel ducimus assumenda minima eaque alias repellat voluptates! Non deleniti ab facilis ut unde hic.
+            </div>
+            <div class="article">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum quibusdam temporibus enim eaque fuga praesentium suscipit nobis, amet, accusantium tempore iste tenetur repudiandae laboriosam commodi! Consectetur architecto dolor recusandae?
+                Ab ad nam totam perspiciatis ipsam minima repellendus. Blanditiis aliquid asperiores error, nam ratione, quos adipisci ducimus excepturi nemo provident labore incidunt, laborum officia veniam ea? Voluptates eum necessitatibus ullam?
+                Ab voluptatum, excepturi incidunt maxime harum enim sequi ipsum architecto eligendi quae non iste est doloribus corporis dignissimos quis voluptates magnam expedita possimus unde nisi culpa pariatur? Magni, delectus rerum!<br>
+                    <div class="img">
+                    <img src="racoon.png" alt="Mistake">
+                    </div>
+            </div>
+        </div>
     </div>
-
+    <div class="container">
+        <div class="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit placeat porro et. Accusantium fugit soluta numquam enim reiciendis quos odit rerum saepe ex? Recusandae pariatur dolor, inventore natus quia commodi.
+        </div>
+    </div>
 </body>
 </html>
