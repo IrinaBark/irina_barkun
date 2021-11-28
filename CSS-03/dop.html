@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .day{
+        display: inline-block;
+        margin-top: 30px;
+        width: 200px;
+        height: 30px;
+        background-color: rgb(250, 241, 115);
+        border: solid rgb(165, 43, 74) 3px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+    }
+    div.menu{
+        position: absolute; top: 25px;
+        width: 200px;
+    }
+    div.menu>div{
+        background-color: rgb(84, 204, 15);
+        height: 30px;
+        border: solid rgb(107, 19, 116) 3px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    div.one{
+        transition: opacity 1s ease-in-out;
+        opacity: 0; 
+    }
+    div.two{
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        transition-delay: 0.5s;
+    }
+    div.three{
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        transition-delay: 1s;
+    }
+    div.day:hover{
+        background-color: rgb(236, 148, 32);
+        color: white;
+    }
+   
+    div.day:hover div.one, div.day:hover div.two,  div.day:hover div.three{
+        display: block;
+        z-index: 1;
+        opacity: 1;
+    }
+    div.menu>div:hover{
+        background-color: yellow;
+        color: red;
+    }
+    @media all and (max-device-width: 1220px){
+        .day{
+            display: block;
+            margin: 0px;
+            width: 400px;
+            background-color: rgb(243, 63, 204);
+        }
+        div.day:hover div.menu{
+        display: block;
+        position: absolute; left: 80%; top: 90%; 
+        z-index: 1;
+        width: 300px;
+        }
+        div.day:hover div.one, div.day:hover div.two,  div.day:hover div.three{
+        display: block;
+        z-index: 1;
+        opacity: 1;
+    }
+    div.menu>div:hover{
+        background-color: yellow;
+        color: red;
+    }
+    }
+</style>
+<body>
+    <div class="day">Понедельник
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+    <div class="day">Вторник
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+    <div class="day">Среда
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+    <div class="day">Четверг
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+    <div class="day">Пятница
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+    <div class="day">Суббота
+        <div class="menu">
+            <div class="one">Завтрак</div>
+            <div class="two">Обед</div>
+            <div class="three">Ужин</div>
+        </div>
+    </div>
+</body>
+</html>
