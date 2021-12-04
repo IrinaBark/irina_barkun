@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            display: block;
+            border: 1px solid gray;
+            border-radius: 0px 10px;
+            width: 50%;
+            height: 100px;
+            text-indent: 20px;
+        }
+        ul{
+            list-style-image: url(file.png);
+        }
+        div.img{
+            display: none;
+        }
+        li:hover div.img{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+     <div class="block">
+        .DOC или .doc (от англ. <img src="link.png"><a href="#">document</a>) - расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.
+        Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться 
+        для двоичных файлов с разметкой.<br>
+        <a href="#" style="background: url(word.png) no-repeat right; padding: 17px;">Документ MS Word</a>
+     </div>
+     <div class="block">
+         Portable Document Format (<img src="link.png"><a href="#">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием
+         ряда возможностей языка Postscript.<br>
+         <a href="#" style="background: url(pdf.png) no-repeat right; padding: 17px;">Документ PDF</a>
+     </div>
+     <div class="block">
+          ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение 
+          <img src="link.png"><a href="#">.zip</a> и хранит в сжатом или 
+          несжатом виде один или несколько файлов, которое можно из него извлечь путем распаковки с помощью специальной программы.<br>
+          <a href="#" style="background: url(zip.png) no-repeat right; padding: 17px;">Архив</a>
+     </div>
+     <h2>Это список файлов</h2>
+     <ul>
+         <li><a href="#">Документ MS Word</a>
+             <div class="img"><img src="word.png"></div>
+        </li>
+         <li><a href="#">Документ PDF</a>
+            <div class="img"><img src="pdf.png"></div>
+        </li>
+         <li><a href="#">Архив</a>
+            <div class="img"><img src="zip.png"></div>
+        </li>
+     </ul>
+</body>
+</html>
