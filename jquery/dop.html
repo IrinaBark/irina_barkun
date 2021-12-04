@@ -21,13 +21,40 @@
         <h3>Проверка пароля</h3>
         <form name="autрorization" method="post" action="http://fe.it-academy.by/TestForm.php">
            <fieldset>
-            <input type="text" name="login" placeholder="Обязательное поле" required>
+            <input type="password" id="pass" name="pass" placeholder="Обязательное поле" required>
             <label for="login">* Пароль</label><br>
-            <input type="password" name="pass" placeholder="Обязательное поле" required>
+            <input type="password" id="passRepeat" name="passRepeat" placeholder="Обязательное поле" required>
             <label for="pass">* Повторите пароль</label><br><br>
             <input type="submit" value="Отправить">
            </fieldset>
         </form>
     </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+       $('#pass').keyup(function(){
+          $('input[type="password"]').css('backgroundColor', 'yellowgreen');
+          var value = $(this).val();
+          $('#passRepeat').keyup(function(){
+          var value_1 = $(this).val();
+          if(value != value_1){
+            $('input[type="password"]').css('backgroundColor', 'red');
+          }
+          else{
+            $('input[type="password"]').css('backgroundColor', 'yellowgreen');
+          }
+      })
+       })
+      
+      
+        
+    })
+</script>
 </body>
 </html>
